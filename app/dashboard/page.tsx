@@ -19,8 +19,7 @@ import messageIcon from "@/public/card_assets/Frame 2147226945.svg";
 import penIcon from "@/public/card_assets/Frame 2147226945 (2).svg";
 import cartIcon from "@/public/card_assets/Frame 2147226944 (1).svg";
 import ScrollCard from "@/ui/dashboard/ScrollCard";
-import faqPhoto from '@/public/Picture.svg'
-
+import faqPhoto from "@/public/Picture.svg";
 
 import {
   ChevronLeft,
@@ -39,6 +38,7 @@ import c from "@/public/littleCardComps/Frame 2147227293.svg";
 import d from "@/public/littleCardComps/Frame 2147227294.svg";
 import e from "@/public/littleCardComps/Frame 2147227295.svg";
 import Form from "@/ui/dashboard/Form";
+import FaqList from "@/ui/dashboard/FaqList";
 
 export default function Page() {
   return (
@@ -456,14 +456,12 @@ export default function Page() {
             essential info at a glance.
           </p>
         </div>
-       <div className=" p-16 flex gap-36">
-      <Image src={faqPhoto} alt="image" width={420} height={390}/>
-      <div>
-        <ul></ul>
-
-      </div>
-
-       </div>
+        <div className="flex gap-36 self-start  w-full">
+          <Image src={faqPhoto} alt="image" width={420} height={390} />
+          <div>
+            <FaqList />
+          </div>
+        </div>
       </section>
     </main>
   );
