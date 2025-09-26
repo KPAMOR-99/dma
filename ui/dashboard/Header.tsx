@@ -5,7 +5,7 @@ import Hamburger from "./Hamburger";
 
 export default function Header() {
   return (
-    <div className="p-5 flex items-center justify-between  border-b border-gray-200 shadow-sm">
+    <header className="p-5 flex items-center justify-between  border-b border-gray-200 shadow-sm">
       <div className="mx-6 bg-">
         <Image src="/logo.png" alt="logo" height={150} width={100} />
       </div>
@@ -50,6 +50,6 @@ export default function Header() {
           </Link>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
